@@ -1,92 +1,75 @@
+@font-face{
+	font-family: comical;
+	src: url('../fonts/animeace2_reg.otf');
+}
+
 body {
-	background-color:#000;
+	background-color: black;
 }
+
+em {
+	font-style: italic;
+}
+
 .main {
-	background-color:#FFF;
-	min-width:1200px;
-	height:550px;
-	margin-top:170px;
-	z-index:1;
-	padding-left:100px;
-	position:relative;
+	background: white;
+	margin-top: 110px;
+	min-width: 1200px;
+	padding-left: 100px;
+	min-height: 500px;
+	position: relative;
 }
-.ryu{
+
+.hadouken, .ryu-cool, .ryu-ready, .ryu-still, .ryu-throwing {
+	background-repeat: no-repeat;
+}
+	
+.hadouken {
+	background-image: url('../images/hadouken.gif');
+	width: 156px;	
+	height: 90px;
+	position: relative;
+	top: 167px;
+	left: -212px;
+	z-index: 10;
+	float: left;
+	display:none;
+}
+
+.ryu-container, .ryu {
 	float:left;
 }
 
-
-/*
-*Class References*
-	<div class="ryu-cool"></div>
-				<div class="ryu-ready"></div>
-				<div class="ryu-stand"></div>
-				<div class="ryu-throwing"></div>
-				<div class="hadouken"></div>
-*/
-.hadouken, .ryu-ready, .ryu-stand, .ryu-throwing{
-	background-repeat:no-repeat;
-}
-
-.ryu-ready, .ryu-stand, .ryu-throwing{
-	width:659px;
-	height:494px;
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
+	width: 659px;
+	height: 494px;
 }
 
 .ryu-ready, .ryu-throwing, .ryu-cool {
-display:none;
+	display: none;
+}	
+
+.ryu-cool {
+	background-image: url('../images/ryu-cool.gif');
+}
+.ryu-ready {
+	background-image: url('../images/ryu-ready-position.gif');
 }
 
-.ryu-ready{
-background-image: url('../images/ryu-ready-position.gif');
+.ryu-still {
+	background-image: url('../images/ryu-standing-still.png');
 }
 
-.ryu-stand{
-background-image: url('../images/ryu-standing-still.png');
+.ryu-throwing {
+	background-image: url('../images/ryu-throwing-hadouken.png');
 }
 
-.ryu-throwing{
-background-image: url('../images/ryu-throwing-hadouken.png');
-}
-
-.hadouken{
-background-image:url('../images/hadouken.gif');
-width:160px;
-height:97px;
-display:none;
-float:left;
-position:absolute;
-z-index:10;
-top:305px;
-left:520px;
-
-}
-
-.ryu-cool{
-background-image:url('../images/ryu-cool.gif');
-}
 .text-content{
 	position: absolute;
 	left: 650px;
 	height: 425px;
 	width: 600px;
 	padding-top: 75px;
-}
-
-.sf-logo {
-	background-image: url('../images/sf-logo.png');
-	width: 682px;
-	height: 314px;
-	display: none;
-}
-
-.jquery-logo {
-	background-image: url('../images/jquery-logo.png');
-	width: 500px;
-	height: 172px;
-	display: none;
-	margin-top: 50px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .brought-by, .how-to {
@@ -116,3 +99,13 @@ background-image:url('../images/ryu-cool.gif');
 	margin-left: 275px;
 }
 
+.math {
+float:right;
+right:2px;
+top:86px;
+left:-46px;
+position:relative;
+color:black;
+text-align:center;
+
+}
