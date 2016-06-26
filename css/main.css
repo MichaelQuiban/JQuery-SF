@@ -1,0 +1,11 @@
+body {
+	background-color:#000;
+}
+.ryu {
+	background-color:#FFF;
+	min-width:1200px;
+	height:550px;
+	margin-top:170px;
+	z-index:1;
+	padding-left:100px;
+}
