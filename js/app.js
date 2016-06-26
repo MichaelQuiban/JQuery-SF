@@ -4,6 +4,20 @@ $(document).ready(function() {
     $('.ryu-ready').show();
   })
   .mouseleave(function() {
-    alert('mouse left');
+    $('.ryu-ready').hide();
+    $('.ryu-stand').show();
+  })
+  .mousedown(function() {
+    console.log('mousedown');
+    // play hadouken sound
+    // show hadouken and animate it to the right of the screen
+    $('.ryu-ready').hide();
+    $('.ryu-throwing').show();
+    $('.hadouken').show();
+  })
+  .mouseup(function() {
+    console.log('mouseup');
+   $('.ryu-throwing').hide();
+   $('.ryu-ready').show();
   });
 });
